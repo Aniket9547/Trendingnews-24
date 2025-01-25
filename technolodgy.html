@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technology News</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Roboto', sans-serif;
+            background: linear-gradient(135deg, #e3f2fd, #bbdefb);
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        header {
+            width: 100%;
+            background: linear-gradient(90deg, #3949ab, #1e88e5);
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 3rem;
+            letter-spacing: 2px;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+        }
+
+        header p {
+            margin: 5px 0 0;
+            font-size: 1.2rem;
+        }
+
+        .menu-bar {
+            margin-top: 15px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .menu-bar a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            background: linear-gradient(90deg, #6a11cb, #2575fc);
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            font-weight: bold;
+            transition: background 0.3s ease, transform 0.3s ease;
+        }
+
+        .menu-bar a:hover {
+            background: #ff8c00;
+            transform: scale(1.1);
+        }
+
+        .box {
+            background: white;
+            width: 90%;
+            max-width: 900px;
+            margin: 20px auto;
+            border-radius: 20px;
+            box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .box:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 12px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        .box h2 {
+            background: linear-gradient(90deg, #fdd835, #f57f17);
+            color: white;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+            font-size: 1.8rem;
+        }
+
+        .box p {
+            padding: 20px;
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+
+        .box img {
+            width: 100%;
+            display: block;
+            border-bottom: 1px solid #ddd;
+            border-top: 1px solid #ddd;
+        }
+
+        .box iframe {
+            width: 99%;
+            height: 300px;
+            border: none;
+            border-top: 1px solid #ddd;
+        }
+
+        .box a {
+            color: #0066cc;
+            text-decoration: underline;
+            font-weight: bold;
+        }
+        .aniket{
+            background-color: #3d3149;
+            width: 30%;
+            border-radius: 20px;
+            color: #bbdefb;
+            text-decoration:#0066cc;
+            touch-action: cross-slide-x;
+            text-shadow: #f57f17;
+            text-overflow: clip;
+        }
+
+        .box a:hover {
+            color: #ff4500;
+        }
+
+        footer {
+            width: 100%;
+            background: #3949ab;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+            box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 1rem;
+        }
+
+        footer a {
+            color: #ffd700;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Trending Technology News 24 Hrs</h1>
+        <p>Stay updated with the latest news and trends around the world</p>
+        <nav class="menu-bar">
+            <a href="home.html">Home</a>
+            <a href="index.html">Sports</a>
+            <a href="entertainment.html">Entertainment</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <div class="box">
+        <h2>Don't share that OTP: A look at digital banking scams, and how to stay safe</h2>
+        <p>The Safe Side, our ongoing series on staying safe online, is back with its ninth edition. At a time when digital scams are rampant, we attempt to throw light on some of the most common banking scams to help you safeguard yourself and your loved ones. <a href="https://indianexpress.com/article/technology/tech-news-technology/the-safe-side-digital-banking-frauds-and-how-to-stay-safe-9784000/">For more information</a></p>
+        <img src="The-Safe-Side.avif" alt="Cyber Crime">
+        <p class="aniket">PLEASE SEE THIS VIDEO -</p>
+        <iframe src="https://www.youtube.com/embed/Nh9n79o74oc" title="OTP Fraud: Tips To Save Yourself From Losing Money | Scam | ET Now Spotlight" allowfullscreen></iframe>
+    </div>
+
+    <div class="box">
+        <h2>Google refuses to embed fact-checking into core search algorithms: Report</h2>
+        <p>This development comes on the heels of a growing debate over the role of tech platforms in curbing misinformation and policing content. <a href="https://indianexpress.com/article/technology/tech-news-technology/google-refuses-to-embed-fact-checking-into-core-search-algorithms-report-9783777/" target="_blank">For more information</a></p>
+        <img src="Google-File-Photo.webp" alt="Google File Photo">
+        <p class="aniket">PLEASE SEE THIS VIDEO -</p>
+        <iframe src="https://www.youtube.com/embed/_78w2oNTQgE" title="The REAL Truth About SEO (Google Core Update)" allowfullscreen></iframe>
+    </div>
+
+    <div class="box">
+        <h2>Apple deepens its India focus with an online store app</h2>
+        <p>Apple’s launch of its online store app in India signals that spending by customers is extending beyond major cities, with companies focusing on regional cities, as smartphone-savvy, younger consumers are keen on shopping online. <a href="https://indianexpress.com/article/technology/tech-news-technology/apple-india-focus-online-store-app-9783392/" target="_blank">For more information</a></p>
+        <img src="Apple-Store-India.avif" alt="Apple Store">
+        <p class="aniket">PLEASE SEE THIS VIDEO -</p>
+        <iframe src="https://www.youtube.com/embed/BJvQFVnk4QE" title="Why Apple is turning its focus to India | Mint Primer | Mint" allowfullscreen></iframe>
+    </div>
+    
+
+    <footer>
+        <p>&copy; 2025 Technology News. All rights reserved. | <a href="#">Privacy Policy</a></p>
+    </footer>
+</body>
+
+</html>

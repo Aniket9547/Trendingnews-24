@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trending News</title>
+    <style>
+       
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(to bottom, #6d5353, #44e00c);
+            color: #fff;
+            line-height: 1.6;
+        }
+
+        
+        header {
+            width: 100%;
+            background: linear-gradient(90deg, hsl(212, 92%, 46%), #0a120e);
+            color: rgb(214, 180, 180);
+            text-align: center;
+            border-radius: 10px;
+            padding:15px;
+            box-shadow: 0px 4px 10px rgba(224, 23, 23, 0.5);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        
+           
+        
+        }
+        
+        header .header-content {
+            flex: 1;
+            text-align: left;
+            margin-left: 20px;
+        }
+        header img {
+            width: 120px;
+            height: 120px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-left: 10px;
+            border: 2px solid #fff;
+        }
+        header h1{
+            margin: 0;
+            font-size: 2rem;
+            text-transform: uppercase;
+            background: linear-gradient(90deg, #22f20f, #1cba29);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: glow 2s infinite alternate;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        header p{
+            margin: 5px 0 0;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: rgb(0, 0, 0);
+            background: linear-gradient(90deg, #d8d4c8, #208cf8);
+            padding: 5px 10px;
+            border-radius: 15px;
+            display: block;
+            margin-right: 40px;
+            text-decoration: double;
+           
+        }
+       
+
+        @keyframes glow {
+            0% {
+                text-shadow: 0 0 5px #42ef0dcc, 0 0 10px #58ea09;
+            }
+            100% {
+                text-shadow: 0 0 20px #2d0b73, 0 0 30px #00ffcc;
+            }
+        }
+
+        .menu-bar {
+            margin: top 5px;
+            display:flex;
+            justify-content:center;
+            gap:40px;
+            position-area:inherit;
+        }
+
+        .menu-bar a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            background:linear-gradient(90deg, #10129c, #081501);
+
+            border-radius: 40px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            transition: background 0.3s ease, transform 0.3s ease;
+        }
+
+        .menu-bar a:hover {
+            background: #ff6600;
+            transform: scale(1.1);
+        }
+
+        
+        .box {
+            background: linear-gradient(90deg, #10129c, #55e706);
+            color: #fff;
+            padding: 30px;
+            margin: 30px auto;
+            max-width: 900px;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.8);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .box:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 1);
+        }
+
+        .box img {
+            width: 100%;
+            max-width: 500px;
+            border-radius: 15px;
+            margin-top: 20px;
+            transition: transform 0.3s ease;
+            margin-left: 150px;;
+        }
+
+        .box img:hover {
+            transform: scale(1.05);
+        }
+
+        .box iframe {
+            width: 100%;
+            max-width: 800px;
+            height: 400px;
+            border-radius: 15px;
+            margin-top: 20px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.7);
+        }
+
+        .box a {
+            color: #31ec07;
+            text-decoration: underline;
+            font-weight: bold;
+        }
+
+        .box a:hover {
+            color: #ff6600;
+            text-decoration: none;
+        }
+        .box iframe {
+            color: #ff6600;
+            text-decoration: none;
+            transform: scale(1,1);
+            margin-left: 30px;;
+        }
+
+        /* Footer Styling */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: linear-gradient(90deg, #000, #333);
+            color: white;
+            box-shadow: 0px -4px 15px rgba(0, 0, 0, 0.7);
+            margin-top: 30px;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 1rem;
+            font-style: italic;
+        }
+
+        footer p span {
+            color: #31ec07;
+            font-weight: bold;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 560px) {
+            header h1 {
+                font-size: 2rem;
+            }
+
+            .menu-bar a {
+                padding: 8px 15px;
+            }
+
+            .box {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        
+        <img src="logo.png" alt="Our Logo">
+        <div class="header-content">
+            <h1>Trending News 24 Hrs</h1>
+            <p>Where the world’s stories unfold—one click at a time.<br>THIS IS OUR HOME PAGE<br>Our website is top Notch for the Trending news so stay with uss...<br> And also our website is working prrocess 17/01/2025 to 29/02/2025 <br> more one things sorry to say our contact link is not working for now...one more update we fix this problem..</p>
+        
+        <br>
+    <nav class="menu-bar">
+        <a target="_blank" href="home.html">HOME</a>
+        <a target="_blank" href="index.html">Sports</a>
+        <a target="_blank" href="technolodgy.html">Technology</a>
+        <a target="_blank" href="entertainment.html">Entertainment</a>
+        <a target="_blank" href="contact.html">contact</a>
+    </nav>
+</div>
+   </header>
+
+    <div class="box">
+        <h2>Breaking News Headline: 1</h2>
+        <p>Watch: Arijit Singh's priceless reaction to a fan singing "Chahun Main..." at his concert.
+            <a target="_blank" href="https://www.msn.com/en-in/entertainment/bollywood/watch-arijit-singh-s-priceless-reaction-to-fan-singing-chahun-main-at-his-concert/ar-BB1rqxsR">Read more</a>
+        </p>
+        <img src="BB1rqxsE.jpeg" alt="Arijit Singh Concert">
+        <iframe src="https://www.youtube.com/embed/xM8PzVuECyI" title="Emotional Moment - Arijit Singh's Concert" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+
+    <div class="box">
+        <h2>Breaking News Headline: 2</h2>
+        <p>Microsoft creates new AI engineering division, read CEO Satya Nadella's welcome note to employees for head Jay Parikh.
+            <a target="_blank" href="https://www.microsoft.com">Read more</a>
+        </p>
+        <img src="117230194.webp" alt="Microsoft AI News">
+        <iframe src="https://www.youtube.com/embed/3YiB2OvK6sY" title="Full Keynote: Satya Nadella at Microsoft Ignite 2024" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 <span>Trending News</span> | All rights reserved by A.B</p>
+    </footer>
+</body>
+</html>

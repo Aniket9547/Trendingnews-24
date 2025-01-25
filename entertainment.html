@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entertainment</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            font-family: 'Roboto', sans-serif;
+            background: linear-gradient(135deg, #b5a7df, rgb(74, 189, 17));
+            color: #333;
+            display: flex;
+            flex-direction:column;
+            align-items: center;
+            text-align: center;
+
+        }
+        header{
+            width: 100%;
+            background: linear-gradient(90deg, #042a55, #bc186a);
+            color: rgb(214, 180, 180);
+            text-align: center;
+            border-radius: 10px;
+            padding: 20px 0;
+            box-shadow: 0px 4px 10px rgba(224, 23, 23, 0.5);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        
+           
+        
+        }
+        header img {
+            width: 120px;
+            height: 120px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-left: 20px;
+            border: 2px solid #fff;
+        }
+
+        header .header-content {
+            flex: 1;
+            text-align: left;
+            margin-left: 20px;
+        }
+        header h2{
+            margin: 0;
+            font-size: 2rem;
+            text-transform: uppercase;
+            background: linear-gradient(90deg, #22f20f, #1cba29);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: glow 2s infinite alternate;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        header p{
+            margin: 5px 0 0;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: rgb(0, 0, 0);
+            background: linear-gradient(90deg, #d8d4c8, #208cf8);
+            padding: 5px 10px;
+            border-radius: 15px;
+            display: inline-block;
+        }
+        .menu-bar{
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            gap: 80px;
+        }
+        .menu-bar a{
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+            padding: 10px 10px;
+            background: linear-gradient(90deg, #06f125, #2575fc);
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            font-weight: bold;
+            transition: background 0.3s ease, transform 0.3s ease;
+        }
+        
+        .menu-bar a:hover {
+            background: #ff6600;
+            transform: scale(1.1);
+        }
+        .box {
+            background: white;
+            width: 90%;
+            max-width: 900px;
+            margin: 20px auto;
+            border-radius: 20px;
+            box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .box:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 12px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        .box1 h2 {
+            background: linear-gradient(90deg, #ff6e7f, #1e709c);
+            color: white;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+            font-size: 1.8rem;
+        }
+        .box2 h2{
+            background:linear-gradient(90deg, #fdd835, #f4511e);
+            padding: 20px;
+            margin: 0;
+            height: auto;
+        }
+        .box2{
+            background: linear-gradient(90deg, #e0ded7, #6ecf5a);;
+        }
+        .box3{
+           background:  linear-gradient(90deg, #efebe3, #1a83a3);
+        }
+        .box3 h2{
+            background: linear-gradient(90deg, hsl(238, 94%, 26%), #174961);
+            color: #efebe3;
+            margin: auto;
+            border-radius: 5%px;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 20px;
+            
+        }
+
+        .box1 p{
+            list-style:armenian;
+            text-decoration: wavy;
+            letter-spacing: 1px;
+            text-justify: distribute;
+            font-weight:bold;
+            
+        }
+        .box img {
+            margin-inline-start: 19%;
+            margin-inline-end: 3%;
+            display: block;
+            border-bottom: 1px solid #ddd;
+            border-top: 1px solid #ddd;
+        }
+        .box a {
+            color: #0066cc;
+            text-decoration: underline;
+            font-weight: bold;
+        }
+        .box iframe {
+            width: 99%;
+            height: 300px;
+            border: none;
+            border-top: 1px solid #ddd;
+            border-radius: 10px;
+        }
+        .box2 p{
+            list-style:armenian;
+            text-decoration: wavy;
+            letter-spacing: 1px;
+            text-justify: distribute;
+            font-weight:bold;
+            
+        }
+       
+        .box2 h1{
+            text-align: left;
+            text-overflow: clip;
+           background-color: #5f5fefac;
+           border-radius: 10px;
+           margin-inline-end: 630px;
+           margin-inline-start: 10px;
+        }
+        .box3 img{
+            
+    display: block;
+    max-width: 100%; /* Ensures the image fits within the box */
+    height: auto; /* Maintains aspect ratio */
+    margin: 0 auto; /* Centers the image horizontally */
+    border-bottom: 1px solid #0c0808;
+    border-top: 1px solid #100808;
+}
+
+        }
+        footer {
+            text-align: center;
+            padding: 15px;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.9);
+            color: white;
+            box-shadow: 0px -2px 10px rgba(0, 0, 0, 0.5);
+            position:static;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 0.9rem;
+            font-style: italic;
+            opacity: 0.8;
+        }
+
+        footer p span {
+            color: #31ec07;
+            font-weight: bold;
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="Our Logo">
+        <div class="header-content">
+            <h2>Trending Entertainment &star News 24 Hrs</h2>
+            <p>Stay updated with us</p>
+        </div>
+        
+    </header>
+    <nav class="menu-bar">
+        <a target="_blank" href="home.html">HOME</a>
+        <a target="_blank" href="index.html">Sports</a>
+        <a target="_blank" href="technolodgy.html">Technology</a>
+        <a target="_blank" href="contact.html">Contact</a>
+    </nav>
+    <div class="box box1">
+    <h2>'Bahut khushi horahi hai': Chris Martin flaunts fluent Hindi during Coldplay concert in Mumbai; fans roar with surprise</h2>
+    <p>Chris Martin charmed Mumbai fans by speaking Hindi during Coldplay's first concert of their Music of the Spheres tour.<a href="https://www.hindustantimes.com/entertainment/music/chris-martin-flaunts-fluent-hindi-during-coldplay-concert-in-mumbai-bahut-khushi-horahi-hai-101737219653700.html">for more informtion</a> </p>
+    <img src="chris_martin.avif" alt="chris martin"<h5>Musician Chris Martin of the British rock band Coldplay performs onstage during a concert as part of their Music of the Spheres World Tour, at the D.Y. Patil stadium in Navi Mumbai on January 18, 2025.(AFP)</h5>
+    <p>Chris Martin knows just how to win an Indian heart. On night one of the Indian leg of his band Coldplay's Music of the Spheres World tour, Chris flaunted perfect Hindi on stage. The concert marks first of three back-to-back gigs from Saturday to Monday at Mumbai's DY Patil Stadium.</p>
+    <iframe  src="https://www.youtube.com/embed/ioQd9nyGHxA" title="It’s Mumbai Darshan Day For Coldplay’S Frontman Chris Martin | Coldplay India Concert | N18S" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+    <div class="box box2">
+        <h2>Emergency box office collection day 2: Kangana Ranaut’s film mints over ₹5 crore</h2>
+    <p>Emergency box office collection day 2: Kangana Ranaut's maiden solo directorial also stars late Satish Kaushik, Shreyas Talpade, and Anupam Kher.<a href="https://www.hindustantimes.com/entertainment/bollywood/emergency-box-office-collection-day-2-kangana-ranaut-s-film-mints-over-rs-5-crore-101737216437186.html">for more information</a></p>
+        <img src="Emergency_.webp">Emergency box office collection day 2: The Kangana Ranaut film was released on January 17. (Twitter)
+        <p>Emergency box office collection day 2: Kangana Ranaut's long-delayed maiden solo directorial hit cinemas this Friday. Despite raking in a low opening, the film is finding its pace at the box office. Also read: Emergency movie review: Kangana Ranaut's fine performance as Indira Gandhi makes this political drama bearable</p>
+        <h1>Box office game:</h1>
+        <p class="aniket">As per Sacnilk, the film registered abusiness of over ₹3.04 crore, taking the total to ₹5.54 crore. The film had an overall 13.32 per cent occupancy in Hindi on Saturday.
+            <br>
+            While the film opened low, it managed to secure Kangana her biggest opening in five years, post pandemic. Emergency opened to ₹2.35 crore on Friday. In comparison to Kangana's solo releases in the past five years, the film's opening ranks at the top. Kangana's previous film, Sarvesh Mewara's 2023 aerial action entertainer Tejas, earned ₹1.25 crore on the opening day at the domestic box office. Her 2022 action film, Dhaakad, helmed by Razneesh Ghai, earned ₹1.20 crore on day 1 at the box office.</p>
+            <iframe src="https://www.youtube.com/embed/WfxflnWsz5g" title="Emergency Movie Collection Day 2 | Kangana Ranaut, Anupam Kher | Emergency Box Office Collection" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div class="box box3">
+            <h2>Saif Ali Khan Stabbing Case Live Update: The actor will not be discharged today - EXCLUSIVE
+            </h2>
+            <p>Chris Martin charmed Mumbai fans by speaking Hindi during Coldplay's first concert of their Music of the Spheres tour.</p>
+            <img src="117386494.webp" alt="saif Ali">
+            <p>The Crime Branch of the Mumbai police, in coordination with the Mumbai Police, has detained the suspected assailant behind the horrific attack on Saif Ali Khan. His capture, which took place in Thane, is a notable development in this important case.<a target="_blank" href="https://timesofindia.indiatimes.com/entertainment/hindi/bollywood/news/saif-ali-khan-stabbing-case-live-update-saif-ali-khan-health-update-actor-with-a-knife-inside-bandra-house-during-a-robbery-bid/liveblog/117386494.cms">for more information</a></p>
+            <iframe  src="https://www.youtube.com/embed/ioQd9nyGHxA" title="It’s Mumbai Darshan Day For Coldplay’S Frontman Chris Martin | Coldplay India Concert | N18S" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        <br>
+    <footer>
+        <P>&copy; 2025 <span>Trending News</span> | All rights reserved by A.B</P>
+    </footer>
+
+    
+</body>
+</html>
